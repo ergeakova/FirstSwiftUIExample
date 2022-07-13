@@ -10,20 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .center){
-            Text("Hello SwiftUI!")
+            Text("Duman App!")
                 .padding(.all)
                 .font(.largeTitle)
             
-            Text("Hello World")
+            Text("welcome")
                 .padding(.all)
                 .font(.footnote)
-            HStack{
-                Text("Hstack1")
-                    .padding()
-                Spacer()
-                Text("Hstack2")
-                    .padding()
-            }
+                .foregroundColor(.gray)
             
             ZStack{
                 Image("duman")
@@ -34,6 +28,23 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor( .white)
             }
+            
+            HStack{
+                Text("Ari")
+                Text("Kaan")
+                Text("Mehmet")
+                Text("Batuhan")
+            }
+            Button {
+                print("Clicked!")
+            } label: {
+                Text("Start")
+                    .font(.largeTitle)
+                    .padding()
+            }.background(.blue)
+                .foregroundColor(.white)
+                .cornerRadius(15)
+
         }
     }
 }
